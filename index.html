@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>  Welcome to My Interactive Page</h1>
+    <button id="toggleMode"> Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Interactive Counter -->
+    <section>
+      <h2> Counter Game</h2>
+      <p>Count: <span id="counterValue">0</span></p>
+      <button id="incrementBtn">➕ Increase</button>
+      <button id="decrementBtn">➖ Decrease</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </section>
+
+    <!-- Collapsible FAQ -->
+    <section>
+      <h2> FAQ</h2>
+      <button class="faq-toggle">What is this page about?</button>
+      <p class="faq-answer hidden">This is a demo of interactive JavaScript features.</p>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2> Sign Up Form</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Sign Up</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
